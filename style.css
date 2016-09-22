@@ -10,9 +10,14 @@ h1{
 
 p{
   Color: black;
-  font-family: 'Merriweather', serif;
-  font-size:1rem;
+  font-family: 'Merriweather', Georgia, "Times New Roman",serif;
+  font-size: 1rem;
+  line-height: 1.35rem;
 
+}
+
+em{
+  font-style:italic;
 }
 
 body {
