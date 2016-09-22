@@ -1,3 +1,7 @@
+html{
+  font-size: 100%;
+}
+
 h1{
   font-family: Helvetica, Arial, sans-serif;
   color: black;
@@ -6,7 +10,8 @@ h1{
 
 p{
   Color: black;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Merriweather', serif;
+  font-size:1rem;
 
 }
 
