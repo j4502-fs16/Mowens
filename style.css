@@ -14,7 +14,7 @@ h1{
 
 
 p{
-  Color: black;
+  color: black;
   font-family: 'Merriweather', Georgia, "Times New Roman", serif;
   font-size: 1rem;
   line-height: 1.35rem;
@@ -47,12 +47,17 @@ body{
   justify-content: space-around;
 }
 
-.nav a{
+.nav a {
   text-decoration: none;
   display: block;
   background: #600017;
   padding: 10px;
-  border-top: black;
+  border-top: black 1px solid;
+  color: white;
+}
+
+.nav a:visited {
+  color: green;
 }
 
 ul{
@@ -67,21 +72,26 @@ img{
   text-align: center;
 }
 
-.aside{
+.aside {
   display: flex;
   background:white;
+  /*width: 100%;*/
 }
 
-.header, .aside{
+.header {
   flex: 1 100%;
   padding: 10px;
 }
 
+.italic {
+font-style: italic;
+}
 
 @media (min-width: 800px) {
 
 .wrapper{
   flex-flow: row wrap;
+  flex: 1 auto;
 }
 
 img{
@@ -92,26 +102,27 @@ width: 50%;
 order: 2;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
-
-
 .nav{
   flex-flow: row;
   justify-content: center;
   padding: 10px;
 
-
 }
-
 .nav a:hover{
   background: white;
 }
 
-.aside {
-  flex: 1 auto;
-  order: 1;
+article {
+  width: 40%;
+}
+
+aside {
+  width: 40%;
+  /*flex-direction: row;
+  order: 3;*/
 }
 
 }
