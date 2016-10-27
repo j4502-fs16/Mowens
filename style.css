@@ -25,7 +25,7 @@ em{
 }
 
 body{
-  background-color: #6A737F;
+  background-color: #94817A;
   text-align: center;
 }
 
@@ -40,24 +40,26 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #600017;
+  background: #7F303E;
   display: flex;
   text-align: center;
   flex-flow: column;
   justify-content: space-around;
+  font-family: 'Francois One', Helvetica, Arial, sans-serif;
 }
 
 .nav a {
   text-decoration: none;
   display: block;
-  background: #600017;
+  background: #7F303E;
   padding: 10px;
   border-top: black 1px solid;
-  color: white;
+  color: black;
 }
 
 .nav a:visited {
-  color: green;
+  color: black;
+
 }
 
 ul{
@@ -74,7 +76,12 @@ img{
 
 .aside {
   display: flex;
-  background:white;
+  background: #95646D;
+  color: black;
+  font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.35rem;
+  padding: 10px; 
   /*width: 100%;*/
 }
 
@@ -113,6 +120,10 @@ ul {
 }
 .nav a:hover{
   background: white;
+}
+
+.nav a{
+  border: none;
 }
 
 article {
