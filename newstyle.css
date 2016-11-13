@@ -3,11 +3,11 @@ body{
   background-color: #94817A;
 }
 
-#header, #nav, h1, h2, h3{
+header, nav, h1, h2, h3{
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-#header .inner{
+header .inner{
   background:  #7F303E;
   padding:10px;
   order: 2;
@@ -24,7 +24,7 @@ body{
   padding:10px;
 }
 
-#nav ul li{
+nav ul li{
   display:block;
   background:#7F303E;
   color: #333;
@@ -32,7 +32,7 @@ body{
   padding:10px;
 }
 
-#nav a {
+nav a {
   display: block;
   color: #fff;
   text-decoration: none;
@@ -40,13 +40,13 @@ body{
   font-weight: bold;
 }
 
-#nav li {
+nav li {
   border-right: 1px solid rgba(255,255,255,.5);
   padding:5px;
   text-align:center;
 }
 
-#nav li:last-child {
+nav li:last-child {
   border-right: none;
 }
 
@@ -63,7 +63,7 @@ img{
 
 header{
   display: flex;
-  flex-flow:row;
+  flex-flow:column;
   margin: 0;
   padding: 0 10px;
 }
@@ -73,8 +73,13 @@ header h2{
   font-size: 2em;
 }
 
+nav ul {
+  display: none;
+  padding: 0;
+}
 
-@media screen and (min-width:600px){
+
+@media screen and (min-width:600px) {
 
   #pageBody{
     display:flex;
@@ -89,19 +94,19 @@ header h2{
     flex:1 auto;
   }
 
-  #nav li{
+  nav li{
     border-right:none;
   }
 
-  #nav ul{
+  nav ul{
         display: flex;
       }
 
-      #nav ul li{
+      nav ul li{
         border-top:none;
       }
 
-      .menu-trigger{
+      .menu-trigger {
         display:none;
       }
 
@@ -109,18 +114,18 @@ header h2{
         order: 1;
       }
 
-      #nav{
-        order: 2;
+      nav{
+        order: 1;
       }
 }
-img {
+/*img {
   width: 80%;
   display: block;
 }
 
 .menu-trigger{
-  display:none; 
-}
+  display:none;
+}*/
 
 @media screen and (min-width:1000px){
 
@@ -129,17 +134,17 @@ img {
     flex-flow:row;
   }
 
-  #nav ul{
+  nav ul{
     display:flex;
-    flex-flow:column;
+    flex-flow:row;
   }
 
-  #nav li{
+  nav li{
     border-right:none;
     border-bottom:1px solid rgba(255,255,255,.5);
   }
 
-  #nav li:last-child {
+  nav li:last-child {
     border-bottom: none;
   }
 
@@ -153,13 +158,11 @@ img {
     margin:10px;
   }
 
-  #nav{
-    order:2;
+  nav{
+    order:1;
     margin:10px;
     align-self: flex-start;
   }
-
-
 
 
 }

@@ -4,7 +4,7 @@ $(document).ready(function(){
   }); //end slide toggle command; number is in miliseconds
 
 $(window).resize(function(){
-    if ($(window).width() > 700){
+    if ($(window).width() > 600){
       $('nav ul').removeAttr('style');
     }
 });
